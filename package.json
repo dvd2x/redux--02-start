@@ -1,23 +1,26 @@
 {
-	"homepage": "http://dvd2x.github.io/redux--02-start",
-  "name": "redux--02-start",
+  "homepage": "http://dvd2x.github.io/redux--01-start",
+  "name": "react-complete-guide",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-redux": "^5.0.6",
+    "react-scripts": "^3.1.1",
+    "redux": "^3.7.2"
   },
   "scripts": {
-	  "predeploy": "npm run build",
-	  "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "install-peers": "^1.0.3"
   },
   "browserslist": {
     "production": [
@@ -30,8 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
 }
